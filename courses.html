@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Subject Page</title>
+    <link rel="stylesheet" href="courses.css">
+    <script>
+      let clickCounts = {
+    physics: 0,
+    chemistry: 0,
+    math: 0,
+  };
+
+  function toggleOptions(subject) {
+    const options = document.getElementById(`${subject}-options`);
+    clickCounts[subject]++;
+    if (clickCounts[subject] % 2 === 1) {
+      options.style.display = "block";
+    } else {
+      options.style.display = "none";
+    }
+  }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Subject Page</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" onclick="toggleOptions('physics')">Physics</a>
+          <div class="options" id="physics-options">
+            <a href="#">DPP</a>
+            <a href="notes.html">Notes</a>
+            <a href="#">Lecture</a>
+          </div>
+        </li>
+        <li>
+          <a href="#" onclick="toggleOptions('chemistry')">Chemistry</a>
+          <div class="options" id="chemistry-options">
+            <a href="#">DPP</a>
+            <a href="#">Notes</a>
+            <a href="#">Lecture</a>
+          </div>
+        </li>
+        <li>
+          <a href="#" onclick="toggleOptions('math')">Math</a>
+          <div class="options" id="math-options">
+            <a href="#">DPP</a>
+            <a href="#">Notes</a>
+            <a href="#">Lecture</a>
+          </html>

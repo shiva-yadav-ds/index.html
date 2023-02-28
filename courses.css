@@ -1,0 +1,111 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set font family and color */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #f1f1f1;
+  transform: scale(1.1);
+}
+
+/* Navigation options styles */
+.options {
+  margin-top: 12px;
+  display: none;
+  background-color: #ddcece;
+  border-radius: 20px;
+  padding: 10px;
+  /* margin: 13px; */
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  font-size: 16px;
+}
+
+.options a {
+  display: flex;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-size:18px;
+  margin: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 769px) {
+.options a{
+  font-size: 50px;
+} 
+.options{
+  margin-top: 50px;
+}
+header h1 {
+  font-size: 60px;
+}
+nav a{
+  font-size: 45px;
+}
+
+}
+
+@media only screen and (min-width: 1080px) {
+  .options a{
+    font-size: 20px;
+  } 
+  header h1 {
+    font-size: 35px;
+  }
+  .options{
+    margin-top: 30px;
+  }
+  nav a{
+    font-size: 25px;
+  }
+}
+
