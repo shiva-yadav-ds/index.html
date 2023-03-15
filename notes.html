@@ -9,50 +9,58 @@
     * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
     header {
       display: flex;
       justify-content: center;
       background-color: rgba(221, 194, 194, 0.5);
-      width: 100%;
       padding: 10px;
-      box-sizing: border-box;
     }
-    
     .container {
-      display: flex;
-    }
-    
-    button {
-      width: 5.5rem;
-      height: 2rem;
-      background-color: #8d7575;
-      color: white;
-      border: 1px solid rgb(23, 31, 41);
-      border-radius: 13px;
-    }
-    button:hover {
-      background-color: #ede1e1;
-      border: 1px solid grey;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
     }
     .pdf {
       border: 2px solid gray;
-      width: 45%;
-      height: 12rem;
-      margin: 10px;
-      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding: 10px;
     }
-    .pdf div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
     .pdf img {
       height: 6rem;
+    }
+    .pdf h3 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    .pdf p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    button {
+      width: 100%;
+      height: 2.5rem;
+      background-color: #8d7575;
+      color: white;
+      border: none;
+      border-radius: 13px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #ede1e1;
+      color: #8d7575;
+    }
+    @media screen and (max-width: 767px) {
+      .pdf {
+        height: auto;
+        margin: 0;
+      }
     }
   </style>
 </head>
