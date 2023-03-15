@@ -77,64 +77,6 @@ nav a:hover {
   margin: 10px;
 }
 
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    perspective: 1000px;
-  }
-  
-  .cube {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    transform-style: preserve-3d;
-    transform: rotateX(-10deg) rotateY(-20deg);
-    animation: rotate 6s linear infinite;
-  }
-  
-  .cube div {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-  }
-  
-  .front {
-    transform: translateZ(100px);
-  }
-  
-  .back {
-    transform: rotateY(180deg) translateZ(100px);
-  }
-  
-  .right {
-    transform: rotateY(90deg) translateZ(100px);
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translateZ(100px);
-  }
-  
-  .top {
-    transform: rotateX(90deg) translateZ(100px);
-  }
-  
-  .bottom {
-    transform: rotateX(-90deg) translateZ(100px);
-  }
-  
-  @keyframes rotate {
-    from {
-      transform: rotateX(-10deg) rotateY(-20deg);
-    }
-    to {
-      transform: rotateX(170deg) rotateY(340deg);
-    }
-  }
 
 /* Media queries for responsiveness */
 @media screen and (min-width: 769px) {
@@ -151,6 +93,89 @@ nav a{
   font-size: 45px;
 }
 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(10, 10, 10);
+}
+
+.cube {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation-duration: 4s;
+    animation-name: animate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+.cube div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, green);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: black;
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+.top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: green;
+    transform: translateZ(-380px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+                0 0 200px rgba(0, 255, 0, 0.4),
+                0 0 300px rgba(0, 255, 0, 0.6),
+                0 0 400px rgba(0, 255, 0, 0.8),
+                0 0 500px rgba(0, 255, 0, 1);
+    transform-style: preserve-3d;
 }
 
 
