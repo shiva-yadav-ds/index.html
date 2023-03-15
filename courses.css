@@ -77,23 +77,6 @@ nav a:hover {
   margin: 10px;
 }
 
-/* Media queries for responsiveness */
-@media screen and (min-width: 769px) {
-.options a{
-  font-size: 50px;
-} 
-.options{
-  margin-top: 50px;
-}
-header h1 {
-  font-size: 60px;
-}
-nav a{
-  font-size: 45px;
-}
-
-}
-
 body{
   background-color: black;
 }
@@ -155,6 +138,24 @@ body{
       transform: rotateX(170deg) rotateY(340deg);
     }
   }
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 769px) {
+.options a{
+  font-size: 50px;
+} 
+.options{
+  margin-top: 50px;
+}
+header h1 {
+  font-size: 60px;
+}
+nav a{
+  font-size: 45px;
+}
+
+}
+
 
 @media only screen and (min-width: 1080px) {
   .options a{
