@@ -1,91 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOTES-SARASWATI-P.C.M-INSTITUTE</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        header{
-            display: flex;
-            justify-content: center;
-            background-color: rgba(221, 194, 194, 0.5);
-
-        }
-        
-        .container{ 
-            display: flex;
-        }
-        
-        button{
-            width: 5.5rem;
-            height: 2rem;
-            background-color: #8d7575;
-            color: white;
-            border: 1px solid rgb(23, 31, 41);
-            border-radius: 13px;
-        }
-        button:hover{
-            background-color: #ede1e1;
-            border: 1px solid grey;
-        }
-       .pdf{
-            border: 2px solid gray;
-            width: 7rem;
-            height: 12rem;
-            margin: 10px;
-            box-sizing: border-box;
-            display: flex;
-           flex-direction: column;
-           justify-content: space-between; 
-          }
-        .pdf div{
-            padding: 8px;
-             display: flex;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTES-SARASWATI-P.C.M-INSTITUTE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(221, 194, 194, 0.5);
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    
+    .container {
+      display: flex;
+    }
+    
+    button {
+      width: 5.5rem;
+      height: 2rem;
+      background-color: #8d7575;
+      color: white;
+      border: 1px solid rgb(23, 31, 41);
+      border-radius: 13px;
+    }
+    button:hover {
+      background-color: #ede1e1;
+      border: 1px solid grey;
+    }
+    .pdf {
+      border: 2px solid gray;
+      width: 45%;
+      height: 12rem;
+      margin: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .pdf div {
+      display: flex;
       flex-direction: column;
       align-items: center;
-        }
-        .pdf img{
-            height: 6rem;
-
-        }
-
-    </style>
+    }
+    .pdf img {
+      height: 6rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Chemistry Notes</h1>
-    </header>
-    <main class="container">
-        <div class="pdf">
-            <div>
-                <img src="photo/Documents/PDF_file_icon.svg.png" alt="pdf image">
-                <p><h3>Types of nuclear</h3>
-                    Vsepr Theory
-                </p>
-                <a href="photo/Documents/chemistry .pdf" download="download pdf"><button>Download Now</button></a>
-            </div>
-         <div class="pdf">
-            <div>
-                <img src="photo/Documents/PDF_file_icon.svg.png" alt="pdf image">
-                <p><h3>Types of nuclear</h3>
-                    Exo&EndoThermic
-                </p>
-                <a href="photo/Documents/Exo&EndoThermic.pdf" download="download pdf"><button>Download Now</button></a>
-            </div> <div>
-                <img src="photo/Documents/PDF_file_icon.svg.png" alt="pdf image">
-                <p><h3>Types of nuclear</h3>
-                    ThermalExpansion
-                </p>
-                <a href="photo/Documents/ThermalExpansion.pdf" download="download pdf"><button>Download Now</button></a>
-            </div>
-        
-
-        </div>
-    </main>
+  <header>
+    <h1>Chemistry Notes</h1>
+  </header>
+  <main class="container">
+    <div class="pdf">
+      <div>
+        <img src="photo/Documents/PDF_file_icon.svg.png" alt="pdf image">
+        <h3>Thermo Chemistry</h3>
+        <p>Vsepr Theory</p>
+      </div>
+      <a href="photo/Documents/chemistry .pdf" download="download pdf"><button>Download Now</button></a>
+    </div>
+    <div class="pdf">
+      <div>
+        <img src="photo/Documents/PDF_file_icon.svg.png" alt="pdf image">
+        <h3>Thermo Chemistry</h3>
+        <p>Exo&EndoThermic</p>
+      </div>
+      <a href="photo/Documents/Exo&EndoThermic.pdf" download="download pdf"><button>Download Now</button></a>
+    </div>
+       <div>
+        <img src="photo/Documents/PDF_file_icon.svg.png" alt="pdf image">
+        <h3>Thermo Chemistry</h3>
+        <p>Thermal Expansion</p>
+      </div>
+      <a href="photo/Documents/ThermalExpansion.pdf" download="download pdf"><button>Download Now</button></a>
+    </div>
+  </main>
 </body>
 </html>
